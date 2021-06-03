@@ -14,7 +14,7 @@ dcmtf_instance = dcmtf(G, X_data, X_data_bef_pp, X_data_size_fac, X_meta, X_dtyp
         mini_batch_size_frac, num_batches, dict_e_loss_weight, dict_loss_weight,\
         dict_e_size, y_val_dict,\
         is_gpu, is_train, is_load_init, is_rand_batch_train, \
-        out_dir)
+        model_dir)
 #fit
 dcmtf_instance.fit()
 #persist
@@ -56,3 +56,4 @@ dcmtf_instance.persist_out(out_dir)
 | is_load_init | True to load the previously used model initializations, False otherwise |
 | is_rand_batch_train | True | 
 | model_dir | directory to store the model | 
+| out_dir | directory to store the outputs: I, A, U | 
